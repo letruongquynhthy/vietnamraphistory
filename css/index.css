@@ -4,26 +4,20 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 60px;
+    margin-top: 100px;
+}
+
 #vietnam {
     color: rgb(255, 255, 255);
     font-family: 'Walnut';
-    font-size: 110pt;
-    letter-spacing: -6pt;
-    position: fixed;
-    top: 40px;
-    left: 100px;
+    font-size: 105pt;
+    letter-spacing: -3.5pt;
+    line-height: 130px;
+    position: absolute;
+    bottom: 0px;
 }
-
-#rap-history {
-    color: rgb(255, 255, 255);
-    font-family: 'Walnut';
-    font-size: 110pt;
-    letter-spacing: -6pt;
-    position: fixed;
-    top: 180px;
-    left: 100px;
-}
-
 
 p {
     color: rgb(255, 255, 255);
@@ -31,69 +25,59 @@ p {
     font-size: 18px;
     font-weight: 200;
     font-style: normal;
-    width: 20%;
 }
 
-#subtitle-1 {
-    position: fixed;
-    left: 100px;
-    bottom: 200px;
+#subtitle{
+    display: block;
+    position: absolute;
+    bottom: 20px;
 }
 
-#subtitle-2 {
-    position: fixed;
-    left: 100px;
-    bottom: 100px;
+#body{
+    display: grid;
+    grid-template-columns: 4fr 0.1fr repeat(3, minmax(0,1fr));
+    column-gap: 25px;
+    row-gap: 25px;
 }
 
+.body{
+    /*background-color: rgb(221, 196, 196);*/
+    position: relative;
+}
+
+hr{
+    height: 20px;
+    border: none;
+}
 
 #f1 {
-    width: 195px;
-    position: fixed;
-    top: 80px;
-    left: 65%;
+    width: 190px;
 }
 
 #f2 {
-    width: 200px;
-    position: fixed;
-    top: 80px;
-    left: 80%;
+    width: 197px;
 }
 
 #f3 {
-    width: 200px;
-    position: fixed;
-    top: 400px;
-    left: 50%;
+    width: 190px;
 }
 
 #f4 {
-    width: 200px;
-    position: fixed;
-    top: 400px;
-    left: 65%
+    width: 190px;
 }
 
 #f5 {
-    width: 200px;
-    position: fixed;
-    top: 400px;
-    left: 80%;
+    width: 190px;
 }
 
-.generations img {
+
+#generations img {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     transition: all 0.2s ease-in-out;
 }
 
-.generations img:hover {
+#generations img:hover {
     transform: scale(1.1);
 }
-
-@media (max-width: 800px) {
-    
-    #f1{
-        width: 100px;
-    }
-  }
